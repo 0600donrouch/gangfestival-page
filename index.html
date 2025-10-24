@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎶 GangFest BA 2025 🔥</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="audioModal" class="audio-modal" role="dialog" aria-modal="true" aria-labelledby="audioModalTitle">
+        <div class="audio-modal-content">
+            <h2 id="audioModalTitle">¡Bienvenido/a a GangFest! 🎉</h2>
+            <p>🎧 Para ingresar al sitio, por favor acepta escuchar la música de introducción 🔊</p>
+            <button id="acceptAudio">Sí, quiero escuchar</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="nav-left">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre">¿Qué es?</a>
+        </nav>
+
+        <div class="logo">GangFest</div>
+
+        <nav class="nav-right">
+            <a href="#artistas">Artistas Invitados</a>
+            <a href="#multimedia">+Info</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="hero wlc-background">
+            <div class="hero-overlay">
+                <h1>🎤 ¡Bienvenido a GangFest 2025! 🔥</h1>
+                <p><u>Viví la experiencia urbana más intensa del año:</u> Trap, Hip-Hop y Freestyle en Buenos Aires. Tus
+                    artistas favoritos te esperan. ✔️</p>
+            </div>
+
+        </section>
+
+        <style>
+            .wlc-background {
+                background: url('imagenes/wlc-background.jpg') center/cover no-repeat;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 40px 20px;
+                box-sizing: border-box;
+            }
+
+            .hero-overlay {
+                background: rgba(0, 0, 0, 0.55);
+                padding: 40px 20px;
+                border-radius: 15px;
+                max-width: 900px;
+                width: 100%;
+                text-align: center;
+                color: #fff;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 1.2s ease, transform 1.2s ease;
+            }
+
+            .hero-overlay.show {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            .hero-overlay h1 {
+                font-size: clamp(2rem, 6vw, 3rem);
+                margin-bottom: 20px;
+                font-family: 'Poppins', sans-serif;
+                text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+            }
+
+            .hero-overlay p {
+                font-size: clamp(1rem, 2.5vw, 1.3rem);
+                margin-bottom: 30px;
+            }
+
+            .video-container {
+                width: 100%;
+                max-width: 900px;
+                margin-top: 20px;
+                aspect-ratio: 16/9;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .video-container iframe {
+                width: 100%;
+                height: 100%;
+                border: 0;
+            }
+
+            /* Ajustes móviles */
+            @media (max-width: 600px) {
+                .hero-overlay {
+                    padding: 25px 15px;
+                }
+
+                .hero-overlay h1 {
+                    font-size: 1.8rem;
+                }
+
+                .hero-overlay p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const overlay = document.querySelector('.hero-overlay');
+                setTimeout(() => overlay.classList.add('show'), 200);
+            });
+        </script>
+
+
+
+        <section id="sobre" class="sobre-festival">
+            <div class="sobre-content">
+                <h2><u>Sobre el festival</u></h2>
+                <p>
+                    GangFest es el punto de encuentro donde las rimas se vuelven himnos y las calles vibran al ritmo del
+                    trap.
+                    Inspirado por la energía de Duki, YSY A, Neo y Khea, el festival promete una experiencia única
+                    que combina música, cultura urbana y un estilo de vida que late fuerte en Buenos Aires.
+                </p>
+
+                <p class="entrada-libre">ACCESO GRATUITO PARA PERSONAS CON DISCAPACIDAD ✅</p>
+
+                <p><strong><span class="subrayado">Estilos musicales presentes:</span></strong> Trap, Hip-Hop,
+                    Freestyle.</p>
+
+                <a href="programacion.html" target="_blank" rel="noopener noreferrer" class="btn">PROGRAMACIÓN DEL
+                    EVENTO</a>
+
+            </div>
+        </section>
+
+        <section id="artistas" class="artistas">
+            <div class="artistas-header">
+                <h2><u>¡ARTISTAS INVITADOS!</u></h2>
+            </div>
+            <div class="artistas-grid">
+
+                <div class="artista-card">
+                    <img src="imagenes/duki-profile.jpg" alt="Duki">
+                    <div class="artista-info">
+                        <h3>Duki</h3>
+                        <p>Trap / Argentina</p>
+                        <a href="https://www.youtube.com/@Duki" target="_blank">Ver Video</a>
+                    </div>
+                </div>
+
+                <div class="artista-card">
+                    <img src="imagenes/ysy-profile.jpg" alt="Ysy A">
+                    <div class="artista-info">
+                        <h3>Ysy A</h3>
+                        <p>Trap / Argentina</p>
+                        <a href="https://www.youtube.com/@ysy__a" target="_blank">Ver Video</a>
+                    </div>
+                </div>
+
+                <div class="artista-card">
+                    <img src="imagenes/neo-profile.jpg" alt="Neo Pistea">
+                    <div class="artista-info">
+                        <h3>Neo Pistea</h3>
+                        <p>Trap / Argentina</p>
+                        <a href="https://www.youtube.com/@neopistea3975" target="_blank">Ver Video</a>
+                    </div>
+                </div>
+
+                <div class="artista-card">
+                    <img src="imagenes/khea-profile.jpg" alt="Khea">
+                    <div class="artista-info">
+                        <h3>Khea</h3>
+                        <p>Trap / Argentina</p>
+                        <a href="https://www.youtube.com/@KHEAYoungFlex" target="_blank">Ver Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contadores">
+                <div class="top-contadores">
+                    <div class="contador fade-in">
+                        <h2>⏳ Falta muy poco ⏳</h2>
+                        <p id="countdown"></p>
+                    </div>
+
+                    <div class="asistentes fade-in">
+                        <h2>🙌 Personas que asistirán</h2>
+                        <p id="asistentesCount">2.543</p>
+                        <button id="asistirBtn">¡Yo voy a ir!</button>
+                        <p id="graciasMsg" class="gracias oculto">🎉 ¡Gracias por sumarte!</p>
+                    </div>
+                </div>
+
+                <div class="video-container fade-in">
+                    <iframe src="https://player.vimeo.com/video/933387893" title="Vimeo duk player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="multimedia" class="multimedia">
+            <div class="multimedia-header">
+                <h2>↓<u>¿Dónde lo vamos a realizar?↓</u></h2>
+            </div>
+
+            <article>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.0810331901607!2d-58.45148772350055!3d-34.67790426142135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccc09cd301c19%3A0x7e2193d896947fff!2sParque%20Roca!5e0!3m2!1ses-419!2sar!4v1759456586707!5m2!1ses-419!2sar"
+                    allowfullscreen="" loading="lazy"></iframe>
+                <h3><i>Parque Roca, Av. Coronel Roca 3490, C1437 Cdad. Autónoma de Buenos Aires</i></h3>
+                <audio id="introAudio" controls>
+                    <source src="audio/intro-page1.mp3" type="audio/mpeg">
+                    Música del cantante duki (Goteo).
+                </audio>
+
+                <h3><u>Evento del año 2024</u></h3>
+                <br>
+                <video controls>
+                    <source src="./video/festival-intro.mp4#t=1" type="video/mp4">
+                    Video del primer GangFest 2024.
+                </video>
+            </article>
+
+            <aside>
+                <h3><u>Tips para disfrutar el festival</u></h3>
+                <ul>
+                    <li>- Llega temprano para no perderte a tus artistas favoritos.</li>
+                    <li>- Respeta las zonas VIP y áreas de seguridad.</li>
+                    <li>- Comparte tu experiencia en redes sociales con <strong>#GangFest2025</strong>.</li>
+                </ul>
+            </aside>
+        </section>
+
+    </main>
+
+    <footer>
+        <p><u>Alumno:</u> Rubén Diaz :)</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('audioModal');
+            const audio = document.getElementById('introAudio');
+            const btn = document.getElementById('acceptAudio');
+
+            if (btn && modal && audio) {
+                btn.addEventListener('click', () => {
+                    modal.style.display = 'none';
+                    audio.play().catch(err => console.warn('No se pudo reproducir automáticamente:', err));
+                });
+            }
+        });
+
+        const countdown = document.getElementById('countdown');
+        const targetDate = new Date("2025-12-20");
+
+        function updateCountdown() {
+            const now = new Date();
+            const diff = targetDate - now;
+
+            if (diff <= 0) {
+                countdown.textContent = "¡El festival ya comenzó!";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((diff / (1000 * 60)) % 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+
+            countdown.textContent = `Faltan ${days} días, ${hours}h ${minutes}m ${seconds}s 🎶🔥`;
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        let asistentes = 1.544
+        const asistentesCount = document.getElementById('asistentesCount');
+        const asistirBtn = document.getElementById('asistirBtn');
+        const graciasMsg = document.getElementById('graciasMsg');
+
+        asistirBtn.addEventListener('click', () => {
+            if (!asistirBtn.disabled) {
+                asistentes++;
+                asistentesCount.textContent = asistentes;
+                asistirBtn.disabled = true;
+                asistirBtn.style.display = "none";
+                graciasMsg.classList.remove("oculto");
+                setTimeout(() => {
+                    graciasMsg.classList.add("mostrar");
+                }, 100);
+            }
+        });
+    </script>
+
+</body>
+
+</html>

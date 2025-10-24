@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎫 Reserva tu entrada</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="video/contact-background.mp4" type="video/mp4">
+        Música del cantante Duki (Agarro la plata)
+    </video>
+
+    <div class="audio-modal" id="audioModal">
+        <div class="audio-modal-content">
+            <h2>🎬 ¡Para continuar!</h2>
+            <p>Por favor, acepta ver y escuchar el video de fondo para disfrutar la experiencia completa del festival.
+            </p>
+            <button class="btn rgb-btn" onclick="acceptAudio()">Sí, quiero ver y escuchar</button>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="logo">GangFest</div>
+        <nav>
+            <a href="index.html#inicio">Inicio</a>
+            <a href="index.html#sobre">¿Qué es?</a>
+            <a href="index.html#artistas">Artistas</a>
+            <a href="index.html#multimedia">Info</a>
+        </nav>
+    </header>
+
+    <main class="contacto-section">
+        <div class="form-container">
+            <h1>📩 Pre-reserva tu entrada</h1>
+            <br>
+            <form id="contactForm">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="text" name="artista" placeholder="Artista favorito">
+                <input type="date" name="fecha">
+
+                <fieldset class="tipo-entrada">
+                    <legend><u>Tipo de entrada:</u></legend>
+                    <label class="card">
+                        <input type="radio" name="entrada" value="General" required>
+                        <div class="content">
+                            <h4>General</h4>
+                            <p>Acceso completo al festival</p>
+                        </div>
+                    </label>
+                    <label class="card">
+                        <input type="radio" name="entrada" value="VIP">
+                        <div class="content">
+                            <h4>VIP</h4>
+                            <p>Acceso prioritario y beneficios exclusivos</p>
+                        </div>
+                    </label>
+                    <label class="card">
+                        <input type="radio" name="entrada" value="Campo delantero">
+                        <div class="content">
+                            <h4>Campo delantero</h4>
+                            <p>Disfruta el show cerca del escenario</p>
+                        </div>
+                    </label>
+                </fieldset>
+
+                <fieldset class="intereses">
+                    <legend><u>Intereses adicionales:</u></legend>
+                    <label class="card small">
+                        <input type="checkbox" name="intereses" value="Camping">
+                        <div class="content">
+                            <h4>Camping</h4>
+                            <p>Vive la experiencia completa</p>
+                        </div>
+                    </label>
+                    <label class="card small">
+                        <input type="checkbox" name="intereses" value="Merchandising">
+                        <div class="content">
+                            <h4>Merchandising</h4>
+                            <p>Recibe artículos oficiales</p>
+                        </div>
+                    </label>
+                    <label class="card small">
+                        <input type="checkbox" name="intereses" value="Meet & Greet">
+                        <div class="content">
+                            <h4>Meet & Greet</h4>
+                            <p>Conoce a tus artistas favoritos</p>
+                        </div>
+                    </label>
+                </fieldset>
+
+                <input list="generos" name="genero" placeholder="Género musical favorito">
+                <datalist id="generos">
+                    <option value="Trap">
+                    <option value="Hip-Hop">
+                    <option value="Freestyle">
+                    <option value="Reggaeton">
+                </datalist>
+
+                <textarea name="comentarios" placeholder="Comentarios..."></textarea>
+                <button type="submit" class="btn rgb-btn">ENVIAR</button>
+            </form>
+        </div>
+
+        <section class="contact-info">
+            <h3>📍 Información de contacto</h3>
+            <p><u>Dirección:</u> Parque Roca, Buenos Aires, Argentina</p>
+            <p><u>Teléfono: </u>+54 11 1234-5678</p>
+            <p><u>Horario de boletería:</u> 10:00 - 20:00</p>
+            <p><u>Redes sociales:</u>
+                <a href="https://www.instagram.com/festival.bat/">Instagram</a> |
+                <a href="https://www.facebook.com/bsastrap/">Facebook</a> |
+                <a href="https://x.com/bsastrap">Twitter</a>
+            </p>
+        </section>
+    </main>
+
+    <script>
+        function acceptAudio() {
+            const modal = document.getElementById('audioModal');
+            modal.style.display = 'none';
+            const video = document.querySelector('.background-video');
+            video.muted = false;
+            video.play();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Formulario enviado correctamente! 🎉');
+                form.reset();
+            });
+        });
+    </script>
+
+    <footer>
+        <p><u>Alumno:</u> Rubén Diaz :) | Buenos Aires</p>
+    </footer>
+</body>
+
+</html>
