@@ -72,8 +72,9 @@ Además:
 
 ---
 
-## 📝 Nota obtenida
-**9 / 10**
+## 📝 Resultado / Nota
+**Calificación:**  
+> *9/10*
 
 ---
 
