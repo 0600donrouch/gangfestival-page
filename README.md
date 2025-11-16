@@ -74,7 +74,7 @@ Además:
 
 ## 📝 Resultado / Nota
 **Calificación:**  
-> *9/10*
+> **9/10**
 
 ---
 
