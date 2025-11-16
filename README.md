@@ -77,6 +77,13 @@ Además:
 
 ---
 
+## 🧾 Devolución del profesor/a
+> **"Diseño atractivo y dinámico; el mensaje inicial interrumpe la experiencia, podría mostrarse de forma más sutil.  
+> Excelente estética y estructura; se recomienda evitar el modal bloqueante al inicio.  
+> Muy buen trabajo."**
+
+---
+
 ## 🚀 Autor
 **Rubén Díaz**  
 [Perfil de GitHub](https://github.com/0600donrouch)
