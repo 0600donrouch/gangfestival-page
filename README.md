@@ -67,8 +67,11 @@ Además:
 - css/
   - styles.css
 - imagenes/
+  - photo.jpg
 - video/
+  - video.mp4
 - audio/
+  - audio.mp3
 
 ---
 
