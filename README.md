@@ -86,4 +86,4 @@ Además:
 
 ## 🚀 Autor
 **Rubén Díaz**  
-[Perfil de GitHub](https://github.com/0600donrouch)
+[GitHub – 0600donrouch](https://github.com/0600donrouch)
